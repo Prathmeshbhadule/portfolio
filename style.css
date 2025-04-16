@@ -1,0 +1,182 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-size: 22px; /* increased from 20px */
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #2a9d8f;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  animation: slideDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Subheading */
+.subheading {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0;
+  color: #264653;
+}
+
+/* Card Container */
+.container {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Animation Delays */
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.5s; }
+.card:nth-child(3) { animation-delay: 0.7s; }
+.card:nth-child(4) { animation-delay: 0.9s; }
+.card:nth-child(5) { animation-delay: 1.1s; }
+.card:nth-child(6) { animation-delay: 1.3s; }
+
+/* Headings */
+h3, h4 {
+  color: #e76f51;
+  font-size: 26px;
+  margin-top: 0;
+}
+
+/* About Section */
+.about-container {
+  text-align: center;
+}
+
+.about-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 20px 0;
+  object-fit: cover;
+  border: 5px solid #2a9d8f;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Education */
+.education {
+  font-size: 22px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.skill-item {
+  text-align: center;
+  width: 100px;
+}
+
+.skill-item i {
+  font-size: 52px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover i {
+  transform: scale(1.2);
+}
+
+.skill-item p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* Lists and Links */
+ul {
+  padding-left: 25px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 25px;
+  font-size: 22px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
